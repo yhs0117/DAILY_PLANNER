@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/login3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_main2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <android.widget.Button
+        android:id="@+id/todo_p"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        android:background="#7AB5D5"
+        android:text="To Do List"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/sche_p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView2"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <android.widget.Button
+        android:id="@+id/diary_p"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="119dp"
+        android:background="#7AB5D5"
+        android:text="Diary"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sche_p"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <android.widget.Button
+        android:id="@+id/sche_p"
+        android:layout_width="357dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="11dp"
+        android:background="#7AB5D5"
+        android:text="Schedule"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/diary_p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todo_p"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <android.widget.Button
+        android:id="@+id/logout"
+        android:layout_width="106dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="59dp"
+        android:background="#00ff0000"
+        android:text="Log Out"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView2"
+        app:layout_constraintEnd_toEndOf="@+id/login3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/todo_p"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
